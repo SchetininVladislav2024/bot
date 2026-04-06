@@ -2,11 +2,10 @@ import asyncio
 import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
-
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
-# Токен из Render Environment Variables
-TOKEN = os.getenv("8539881768:AAF3ZxMW7ibT2RW3rdxWgRJAT4LW1RaSE9U")
+# Токен из переменной окружения
+TOKEN = os.getenv("BOT_TOKEN")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
